@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+  <title>TP</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+        <div> 
+        </div>
+  <h1>Please fill out the form</h1>
+  <hr>
+  <div class="result">
+        <h3 id="myresult">Result</h3>
+  </div>
+  <hr>
+  <form class="form" >
+    <div class="form-group">
+        <label for="pakages">How many pakages do you have?</label>
+        <input type="number" class="form-control" id="pakages" min="1" max="10">
+
+        <div class="input-group">
+        <label for="rolls">How many rolls are in a pakage?</label>
+            <select class="form-control" id="rolls">
+                    <option value="">Select</option>
+                    <option value="8">8</option>
+                    <option value="10">10</option>
+                    <option value="12">12</option>
+            </select>
+        </div>
+      
+        <label for="person">For how many persons?</label>
+        <input type="number" class="form-control" id="person" name="person" min="1" max="10">
+
+        <label for="bathroom">How many times do you use your bathroom per day ?</label>
+        <input type="number"  class="form-control" id="bathroom"  min="1" max="100">
+
+        <label for="sheet">How many scheets of toilet paper do you use each time?</label>
+        <input type="number" class="form-control" id="sheet" name="sheet" min="1" max="20">
+    </div>
+    
+    <button type="button" class="form-control btn btn-info" onclick=" calculate()">TP</button>
+  </form>
+</div>
+
+<script src="main.js" ></script>
+</body>
+</html>
